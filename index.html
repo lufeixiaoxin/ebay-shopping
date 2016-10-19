@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>eBay Shopping</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="jquery-1.11.1.js"></script>
-  <link rel="stylesheet" type="text/css" href="hw8.css">
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="jquery.validate.js"></script>
+    <title>eBay Shopping</title>
+  
+    <link rel="stylesheet" type="text/css" href="hw8.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
+  
+  
     
 <script>
     
@@ -244,7 +245,7 @@ function displayResult(data){
         //top=reated string
         var topRatedIcon="";
         if(json[itemi].sellerInfo.topRatedSeller=="true")
-            topRatedIcon = "<img src=\"itemTopRated.jpg\" class=\"smallIcon\">&nbsp;&nbsp;&nbsp;";
+            topRatedIcon = "<img src=\"image/itemTopRated.jpg\" class=\"smallIcon\">&nbsp;&nbsp;&nbsp;";
         
         //parameters to pass to facebook share function
         var itemURL = json[itemi].basicInfo.viewItemURL;
@@ -261,7 +262,7 @@ function displayResult(data){
                                 "<i>Location:"+parseEmpty(json[itemi].basicInfo.location)+"</i>&nbsp;&nbsp;"+
                                 topRatedIcon+
                                 "<a data-toggle=\"collapse\" data-target=\"#details"+i+"\">View Details&nbsp;&nbsp;&nbsp;</a>"+
-                                "<a id=\"fbShare\" href=\"#\" data-title=\""+title+"\" data-itemURL=\""+itemURL+"\" data-imgURL=\""+imgURL+"\" data-desc=\""+desc+"\"><img src=\"fb.png\" class=\"smallIcon\"></a>"+
+                                "<a id=\"fbShare\" href=\"#\" data-title=\""+title+"\" data-itemURL=\""+itemURL+"\" data-imgURL=\""+imgURL+"\" data-desc=\""+desc+"\"><img src=\"image/fb.png\" class=\"smallIcon\"></a>"+
                             "</div>"+
                   "</div>";
         
@@ -404,7 +405,7 @@ function displayResult(data){
 
 <div class="container"> 
     
-  <br><br><img src="ebay.jpg" alt="eBay" class="ebayLogo"><b style="font-size:30px">  Shopping</b><br><br><br>
+  <br><br><img src="image/ebay.jpg" alt="eBay" class="ebayLogo"><b style="font-size:30px">  Shopping</b><br><br><br>
     
   <form class="form-horizontal" role="form" id="searchForm">
       

@@ -1,0 +1,53 @@
+.ebayLogo{
+    width:120px;
+    height:auto:
+}
+
+.itemRow{
+    margin-top:20px;
+}
+
+.invisible{
+    visibility:hidden;
+}
+
+.smallImg{
+    width: 90px;
+    height: 90px;
+}
+
+.dummyImg{
+    width: 90px;
+    height: 1px;
+}
+
+.modalImg{
+    width: 100%;
+}
+
+.detailtab{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 115px;
+}
+
+.smallIcon{
+    width:20px;
+    height:20px;
+}
+
+input.invalid{
+    border-color: red;
+}
+
+#searchForm label.error{
+    color:red;
+}
+
+.greenIcon{
+    color: green;
+}
+
+.redIcon{
+    color: red;
+}

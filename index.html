@@ -3,7 +3,7 @@
 <head>
     <title>eBay Shopping</title>
   
-    <link rel="stylesheet" type="text/css" href="hw8.css"> 
+    <link rel="stylesheet" type="text/css" href="main.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     
     
@@ -88,7 +88,7 @@ $(document).ready(function() {
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "hw8.php",
+                url: "ebay.php",
                 data: data,
                 success: function(data) {
                     var jsonObj=JSON.parse(data["json"]);
@@ -162,7 +162,7 @@ function pageClick(button){
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: "hw8.php", 
+        url: "ebay.php", 
         data: data,
         success: function(data) {
             displayResult(data["json"]);
